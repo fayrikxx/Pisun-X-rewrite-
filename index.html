@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisun X</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #editor {
+            width: calc(100% - 20px);
+            height: calc(100% - 50px);
+            margin: 10px;
+            background-color: #1e1e1e;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            resize: none;
+        }
+        .toolbar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #000;
+            padding: 5px 10px;
+        }
+        .toolbar button {
+            background-color: magenta;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <button id="saveBtn">Save</button>
+        <button id="loadBtn">Load</button>
+        <button id="formatBtn">Format</button>
+    </div>
+    <textarea id="editor">-- Lua script example\nfunction helloWorld()\n    print("Hello, world!")\nend\nhelloWorld()</textarea>
+    <script src="renderer.js"></script>
+</body>
+</html>
