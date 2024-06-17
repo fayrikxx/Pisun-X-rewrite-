@@ -1,0 +1,15 @@
+{
+  "name": "pisun-x",
+  "version": "1.0.0",
+  "description": "A simple text editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^24.0.0"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT"
+}
